@@ -34,7 +34,7 @@ fn impl_needleman_wunsch(
     // Invariant -- gap_val cannot be in either sequence
     if (seq_one.contains(&gap_val)) || (seq_two.contains(&gap_val)) {
         return Err(
-            "Gap value {gap_val} cannot be present in either sequence"
+            "Gap value cannot be present in either sequence"
         );
     }
 
